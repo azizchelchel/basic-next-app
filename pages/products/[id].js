@@ -9,7 +9,7 @@ export const getStaticProps= async (context) => {
     }
 }
 export const getStaticPaths = async () => {
-    const data = await fetch("https://fakestoreapi.com/products?limit=9");
+    const data = await fetch("https://fakestoreapi.com/products");
     const jsonData = await data.json();
     console.log(jsonData)
     const paths = jsonData.map( product => ({ params: { id: product.id.toString() } }) );
