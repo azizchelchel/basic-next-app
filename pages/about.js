@@ -1,0 +1,13 @@
+import React from 'react'
+
+const  About = () => {
+  return (
+    <div>
+      <h1>hello from about</h1>
+      <br /><br />
+      <hr />
+    </div>
+  )
+}
+
+export default About
